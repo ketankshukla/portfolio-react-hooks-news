@@ -10,7 +10,7 @@ export default function App() {
 
   useEffect(() => {
     getResults();
-  }, []);
+  }, [""]);
 
   const getResults = async () => {
     setLoading(true);
@@ -44,7 +44,6 @@ export default function App() {
 
   return (
     <div className="container max-w-md mx-auto p-4 m-2 bg-purple-lightest shadow-lg rounded">
-
       <h1 className="text-grey-darkest font-thin">Ketan's Hooks News</h1>
 
       <form onSubmit={handleFormSubmit} className="mb-2">
