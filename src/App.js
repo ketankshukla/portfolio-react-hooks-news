@@ -10,7 +10,7 @@ export default function App() {
 
   useEffect(() => {
     getResults();
-  }, [""]);
+  }, [" "]);
 
   const getResults = async () => {
     setLoading(true);
