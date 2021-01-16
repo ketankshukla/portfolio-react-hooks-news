@@ -10,7 +10,8 @@ export default function App() {
 
   useEffect(() => {
     getResults();
-  }, [" "]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const getResults = async () => {
     setLoading(true);
